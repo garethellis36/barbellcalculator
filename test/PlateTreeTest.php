@@ -22,7 +22,6 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
 
     public function testGetPlates()
     {
-
         $plates = [
             [
                 "kg" => 20,
@@ -30,7 +29,7 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
                 "multi" => true,
                 "color" => "blue",
                 "size" => "large",
-                "weight" => 20
+                "weight" => 20,
             ],
             [
                 "kg" => 15,
@@ -38,7 +37,7 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
                 "multi" => false,
                 "color" => "yellow",
                 "size" => "large",
-                "weight" => 15
+                "weight" => 15,
             ],
             [
                 "kg" => 10,
@@ -46,7 +45,7 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
                 "multi" => false,
                 "color" => "green",
                 "size" => "small",
-                "weight" => 10
+                "weight" => 10,
             ],
             [
                 "kg" => 5,
@@ -54,7 +53,7 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
                 "multi" => false,
                 "color" => "orange",
                 "size" => "small",
-                "weight" => 5
+                "weight" => 5,
             ],
             [
                 "kg" => 2.5,
@@ -62,7 +61,7 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
                 "multi" => false,
                 "color" => "red",
                 "size" => "small",
-                "weight" => 2.5
+                "weight" => 2.5,
             ],
             [
                 "kg" => 1.25,
@@ -70,7 +69,7 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
                 "multi" => false,
                 "color" => "blue",
                 "size" => "small",
-                "weight" => 1.25
+                "weight" => 1.25,
             ],
         ];
 
@@ -80,7 +79,7 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
             "multi" => true,
             "color" => "red",
             "size" => "large",
-            "weight" => 25
+            "weight" => 25,
         ];
 
         $tree = new PlateTree("kg");
@@ -89,7 +88,5 @@ class PlateTreeTest extends \PHPUnit_Framework_TestCase
         array_unshift($plates, $bigRedPlate);
         $tree = new PlateTree("kg", true);
         $this->assertEquals(array_values($plates), array_values($tree->getPlates()));
-
     }
-
 }

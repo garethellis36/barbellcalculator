@@ -52,12 +52,12 @@ class BarbellTest extends \PHPUnit_Framework_TestCase
             [
                 "weight" => 20,
                 "color" => "blue",
-                "size" => "large"
+                "size" => "large",
             ],
             [
                 "weight" => 20,
                 "color" => "blue",
-                "size" => "large"
+                "size" => "large",
             ],
         ];
 

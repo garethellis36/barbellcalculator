@@ -73,7 +73,7 @@ class Barbell
         $this->plates[] = [
             "weight" => $plate["weight"],
             "color" => $plate["color"],
-            "size" => $plate["size"]
+            "size" => $plate["size"],
         ];
 
         return $this->setTotalWeight($this->getTotalWeight() + $plate["weight"]);

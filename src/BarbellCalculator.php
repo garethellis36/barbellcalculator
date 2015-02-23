@@ -51,15 +51,14 @@ class BarbellCalculator
         //get array of plate options
         $tree = new PlateTree($unit, $options["include_big_red_plates"]);
         $this->plateTree = $tree->getPlates();
-
     }
 
     public function calculate()
     {
         $this->selectPlates();
+
         return $this->barbell->getPlates();
     }
-
 
     protected function isValidWeight($unit, $targetWeight, $collarWeight)
     {
@@ -90,6 +89,7 @@ class BarbellCalculator
     protected function plateWeightLessThanBalance($plate)
     {
         $balance = $this->calculateBalance();
+
         return ($plate["weight"] * 2 <= $balance);
     }
 

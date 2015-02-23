@@ -44,7 +44,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
             ["weight" => 20, "color" => "blue"],
             ["weight" => 20, "color" => "blue"],
             ["weight" => 10, "color" => "green"],
-            ["weight" => 10, "color" => "green"]
+            ["weight" => 10, "color" => "green"],
         ];
         $actual = [];
 
@@ -65,7 +65,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
             ["weight" => 5, "color" => "red"],
             ["weight" => 5, "color" => "red"],
             ["weight" => 2.5, "color" => "blue"],
-            ["weight" => 2.5, "color" => "blue"]
+            ["weight" => 2.5, "color" => "blue"],
         ];
         $actual = [];
 
@@ -79,7 +79,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
         $options = [
             "include_big_red_plates" => false,
             "bar_weight" => 35,
-            "collar_weight" => 0
+            "collar_weight" => 0,
         ];
         $calculator = new BarbellCalculator("kg", 160, $options);
         $platesRequired = $calculator->calculate();
@@ -92,7 +92,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
             ["weight" => 20, "color" => "blue"],
             ["weight" => 20, "color" => "blue"],
             ["weight" => 2.5, "color" => "red"],
-            ["weight" => 2.5, "color" => "red"]
+            ["weight" => 2.5, "color" => "red"],
         ];
         $actual = [];
 
@@ -105,7 +105,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
         $options = [
             "include_big_red_plates" => true,
             "bar_weight" => 20,
-            "collar_weight" => 0
+            "collar_weight" => 0,
         ];
         $calculator = new BarbellCalculator("kg", 180, $options);
         $platesRequired = $calculator->calculate();
@@ -118,7 +118,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
             ["weight" => 25, "color" => "red"],
             ["weight" => 25, "color" => "red"],
             ["weight" => 5, "color" => "orange"],
-            ["weight" => 5, "color" => "orange"]
+            ["weight" => 5, "color" => "orange"],
         ];
         $actual = [];
 
@@ -129,7 +129,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
 
         //test including collars
         $options = [
-            "collar_weight" => 5
+            "collar_weight" => 5,
         ];
         $calculator = new BarbellCalculator("lb", 410, $options);
         $platesRequired = $calculator->calculate();
@@ -142,7 +142,7 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
             ["weight" => 45, "color" => "blue"],
             ["weight" => 45, "color" => "blue"],
             ["weight" => 45, "color" => "blue"],
-            ["weight" => 45, "color" => "blue"]
+            ["weight" => 45, "color" => "blue"],
         ];
         $actual = [];
 
@@ -150,7 +150,6 @@ class BarbellCalculatorTest extends \PHPUnit_Framework_TestCase
             $actual[] = ["weight" => $plate["weight"], "color" => $plate["color"]];
         }
         $this->assertEquals($actual, $expected);
-
     }
 
     /**

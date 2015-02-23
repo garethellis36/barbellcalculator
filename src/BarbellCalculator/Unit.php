@@ -8,7 +8,6 @@
 
 namespace Gumbercules\BarbellCalculator;
 
-
 trait Unit
 {
     protected $validUnits = [
