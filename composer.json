@@ -1,0 +1,14 @@
+{
+    "name": "gumbercules/barbellcalculator",
+    "description": "A simple PHP lib to calculate the plates required to load a barbell to a certain weight",
+    "authors": [
+        {
+            "name": "Gareth Ellis",
+            "email": "garethellis@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {"Gumbercules\\": "/src"}
+    }
+}
