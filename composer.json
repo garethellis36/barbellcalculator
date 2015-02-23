@@ -14,9 +14,13 @@
       "phpunit/phpunit": "^4.5"
     },
     "autoload": {
-      "psr-4": {"Gumbercules\\": "/src"}
+      "psr-4": {
+        "Gumbercules\\": "src"
+      }
     },
     "autoload-dev": {
-     "psr-4": {"Gumbercules\\test", "test"}
+     "psr-4": {
+       "Gumbercules\\test": "test"
+     }
     }
 }
